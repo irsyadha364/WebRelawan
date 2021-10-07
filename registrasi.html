@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rescue</title>
+        <link rel="stylesheet" href="styleRelawan.css">
+</head>
+<body>
+	<header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <img src="img/1.png" align="left">
+                    <img src="img/2.png" align="right">
+                    <div class="col">
+                        <h2>KNDJH RESCUE 020 MALANG</h2>
+                        <h2>Cepat Tangkas Trengginas</h2><br><br>
+                        <p>Gg. V No.36 RT.03/RW.10, Kotalama, Kec. KedungKandang, Kota Malang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <a href="loginRelawan.html">Login</a>
+        <a href="registrasi.html">Register</a>
+        <a href="webRelawan.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Cluster</button>
+        <div class="dropdown-content">
+            <a href="paramedic.html">Paramedic</a>
+            <a href="evakuasi.html">Evacuation</a>
+            <a href="escorting.html">Escorting</a>
+        </div>
+    </div> 
+    </div>
+
+	<form action="registProcess.php" method="post">
+ 		<div class="form">
+ 			<h1>Registrasi Anggota</h1>
+		<p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label><br><br>
+            <input type="date" name="tanggal" />
+        </p><br>
+        <p>
+            <label>Golongan Darah:</label>
+            <select name="goldar">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="ab">AB</option>
+                <option value="o">O</option>
+            </select>
+        </p><br>
+        <p>
+            <label>Alamat:</label>
+            <input type="text" name="alamat" placeholder="Alamat anda..." />
+        </p>
+        <p>
+            <label>Handphone:</label>
+            <input type="text" name="handphone" placeholder="Masukkan nomer..." />
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p><br>
+        <p>
+            <label>Status Perkawinan:</label><br><br>
+            <label><input type="radio" name="status_perkawinan" value="kawin" /> Kawin</label>
+            <label><input type="radio" name="status_perkawinan" value="belum kawin" /> Belum Kawin</label>
+        </p><br>
+        <p>
+            <label>Pekerjaan:</label>
+            <input type="text" name="pekerjaan" placeholder="Pekerjaan anda..." />
+        </p>
+        <p>
+            <label>Kewarganegaraan:</label><br><br>
+            <label><input type="radio" name="kewarganegaraan" value="wni" /> WNI</label>
+            <label><input type="radio" name="kewarganegaraan" value="wna" /> WNA</label>
+        </p><br>
+        <p>
+            <label>Kenapa masuk Rescue020?:</label><br><br>
+            <textarea name="sebab"></textarea>
+        </p><br>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Password..." />
+        </p>
+        <p>
+            <label>Sebagai:</label><br><br>
+            <label><input type="radio" name="sebagai" value="admin" /> Admin</label>
+            <label><input type="radio" name="sebagai" value="anggota" /> Anggota</label>
+        </p><br><br><br><br>
+		<div class="navbar">
+			<button type="submit" class="registerbtn" value="simpan">DAFTAR</button>
+		</div>
+		</div>
+	</form> 
+        <footer><p>@Copyright IrsyadhaAR 2021</p>
+        </footer>
+
+</body>
+</html>
